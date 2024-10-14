@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.logo {
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  color: black;
+}
+
+.logo span {
+  color: rgb(133, 184, 184);
+}
