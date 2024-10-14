@@ -5,9 +5,9 @@ import styles from "./user-profile.module.css";
 
 export const UserProfileContainer = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <div>
-        <ul>
+        <ul className={styles.flex}>
           <li className={styles.icon}>
             <RiUser4Line />
           </li>
