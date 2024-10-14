@@ -16,13 +16,17 @@ export const UserProfileContainer = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className={styles.imgContainer}>
         <div>img</div>
       </div>
-      <div>
-        <ul>
-          <li>Hello username</li>
-          <li>e-mail</li>
+      <div className={styles.textContainer}>
+        <ul className={styles.list}>
+          <li>
+            <h2>Hello username</h2>
+          </li>
+          <li>
+            <h3>e-mail</h3>
+          </li>
         </ul>
       </div>
       <div>

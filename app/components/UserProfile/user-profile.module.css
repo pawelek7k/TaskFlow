@@ -28,3 +28,32 @@
   flex-direction: column;
   align-items: center;
 }
+
+.list {
+  list-style: none;
+}
+
+.textContainer {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.textContainer h2 {
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.textContainer h3 {
+  font-size: 1rem;
+  color: rgba(128, 128, 128, 0.648);
+}
+
+.imgContainer {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  border: thin solid rgb(225, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
