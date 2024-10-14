@@ -1,6 +1,7 @@
 import { RiUser4Line } from "react-icons/ri";
 import { RxDotsHorizontal } from "react-icons/rx";
 import { CardsList } from "../CardsList";
+import { SocialsInput } from "../SocialsInput";
 import styles from "./user-profile.module.css";
 
 export const UserProfileContainer = () => {
@@ -31,6 +32,9 @@ export const UserProfileContainer = () => {
       </div>
       <div>
         <CardsList />
+      </div>
+      <div>
+        <SocialsInput />
       </div>
     </div>
   );
