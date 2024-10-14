@@ -11,7 +11,7 @@ export const UserProfileContainer = () => {
           <li className={styles.icon}>
             <RiUser4Line />
           </li>
-          <li>
+          <li className={styles.icon}>
             <RxDotsHorizontal />
           </li>
         </ul>

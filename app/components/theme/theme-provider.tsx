@@ -1,11 +1,10 @@
 "use client";
 
+import { ThemeProvider } from "next-themes";
 import { ReactNode } from "react";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
 
 const ThemeProviderClient = ({ children }: { children: ReactNode }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return <ThemeProvider>{children}</ThemeProvider>;
 };
 
 export default ThemeProviderClient;
