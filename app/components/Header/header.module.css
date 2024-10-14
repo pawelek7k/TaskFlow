@@ -1,0 +1,11 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.headerList {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
