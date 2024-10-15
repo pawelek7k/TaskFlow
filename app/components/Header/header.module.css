@@ -14,11 +14,19 @@
   display: flex;
   list-style: none;
   gap: 2rem;
-  color: grey;
   cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
-.headerList a {
+.headerList a,
+.headerList li {
   text-decoration: none;
-  color: grey;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.headerList li:hover,
+.headerList a:hover {
+  color: var(--hover-color);
 }

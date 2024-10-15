@@ -12,7 +12,7 @@
 }
 
 .container svg {
-  color: grey;
+  color: var(--text);
   cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;

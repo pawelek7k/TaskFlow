@@ -31,7 +31,7 @@
 }
 
 .item svg {
-  color: grey;
+  color: var(--text);
   transition: color 250ms ease-in-out;
 }
 
@@ -67,6 +67,6 @@
 }
 
 .item span {
-  color: grey;
+  color: var(--text);
   font-size: 0.8rem;
 }

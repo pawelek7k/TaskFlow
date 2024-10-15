@@ -3,4 +3,6 @@
   --border: thin solid rgb(235, 232, 232);
   --transition: 250ms ease-in-out;
   --box-shadow-color: rgba(66, 68, 90, 1);
+  --text: #2a2e29;
+  --background: #f9faf9;
 }

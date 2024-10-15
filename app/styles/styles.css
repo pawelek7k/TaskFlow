@@ -7,5 +7,5 @@
 
 body {
   font-family: "Geist Sans", sans-serif;
-  background-color: #fbf9fa;
+  background-color: var(--background);
 }

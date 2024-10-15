@@ -40,7 +40,7 @@
 
 .textContainer h2 {
   font-size: 1.1rem;
-  color: grey;
+  color: var(--text);
 }
 
 .textContainer h3 {
