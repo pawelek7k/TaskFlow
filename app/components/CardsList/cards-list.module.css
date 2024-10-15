@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   list-style: none;
   gap: 0;
-  border: thin solid rgb(225, 220, 220);
+  border: var(--border);
   border-radius: 2rem;
   max-width: 14rem;
 }
@@ -11,7 +11,7 @@
 .item {
   width: 7rem;
   height: 7rem;
-  border: thin solid rgb(235, 232, 232);
+  border: var(--border);
   gap: 0.5rem;
   cursor: pointer;
   transition: transform 250ms ease-in-out, background-color 250ms ease-in-out,
@@ -48,7 +48,7 @@
 
 .item:hover span,
 .item:hover svg {
-  color: black;
+  color: var(--hover-color);
 }
 
 .item:nth-child(1) {

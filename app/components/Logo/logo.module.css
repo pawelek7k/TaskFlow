@@ -11,5 +11,5 @@
 }
 
 .logo span {
-  color: rgb(133, 184, 184);
+  color: var(--hover-color);
 }
