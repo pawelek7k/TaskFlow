@@ -14,8 +14,7 @@
   border: var(--border);
   gap: 0.5rem;
   cursor: pointer;
-  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out,
-    box-shadow 250ms ease-in-out, color ease-in-out 250ms;
+  transition: var(--transition);
   transform: scale(1);
   z-index: 1;
 }
