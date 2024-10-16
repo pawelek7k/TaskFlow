@@ -1,6 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import styles from "../../components/DashboardContainer/container.module.css";
 
 const Container = () => {
   const { slug } = useParams();
@@ -23,7 +24,7 @@ const Container = () => {
   };
   return (
     <div>
-      <div className="flex-1 p-4">{renderContent()}</div>
+      <div className={styles.dashboardContainer}>{renderContent()}</div>
     </div>
   );
 };
