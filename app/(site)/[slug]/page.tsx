@@ -1,5 +1,6 @@
 "use client";
 
+import { DashboardContainer } from "@/app/components/DashboardContainer";
 import { useParams } from "next/navigation";
 import styles from "../../components/DashboardContainer/container.module.css";
 
@@ -8,6 +9,8 @@ const Container = () => {
 
   const renderContent = () => {
     switch (slug) {
+      case "dashboard":
+        return <DashboardContainer />;
       case "notes":
         return <div>Notes</div>;
       case "tasks":
