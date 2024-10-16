@@ -1,27 +1,66 @@
+import { useState } from "react";
+import { ModalWithColors } from "../ModalColor";
 import styles from "./container.module.css";
 
-const tasks = [
+const category = [
   { status: "To do" },
   { status: "InWork" },
   { status: "Review" },
   { status: "Done" },
 ];
 
-export const DashboardContainer = () => {
-  const ChangeColor = () => {
-    console.log("ok");
+export const DashboardContainer: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCategoryIndex, setSelectedCategoryIndex] = useState<
+    number | null
+  >(null);
+  const [categoryColors, setCategoryColors] = useState(
+    Array(category.length).fill("rgb(133, 184, 184)")
+  );
+
+  const openModal = (index: number) => {
+    setSelectedCategoryIndex(index);
+    setIsModalOpen(true);
   };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const changeCategoryColor = (color: string) => {
+    const updatedColors = [...categoryColors];
+    if (selectedCategoryIndex !== null) {
+      updatedColors[selectedCategoryIndex] = color;
+    }
+    setCategoryColors(updatedColors);
+    closeModal();
+  };
+
   return (
     <div className={styles.dashboardContainer}>
       <ul className={styles.tasksList}>
-        {tasks.map((task, index) => (
+        {category.map((task, index) => (
           <li key={index}>
-            <div className={styles.circle} onClick={ChangeColor}></div>
-            <div className={styles.defaultColor}></div>
+            <div
+              className={styles.circle}
+              style={{ backgroundColor: categoryColors[index] }}
+              onClick={() => openModal(index)}
+            ></div>
+            <div
+              className={styles.defaultColor}
+              style={{ backgroundColor: categoryColors[index] }}
+            ></div>
             <div>{task.status}</div>
           </li>
         ))}
       </ul>
+
+      {isModalOpen && (
+        <ModalWithColors
+          onClose={closeModal}
+          onColorSelect={changeCategoryColor}
+        />
+      )}
     </div>
   );
 };

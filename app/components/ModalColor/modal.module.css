@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 5px 20px -14px var(--box-shadow-color);
+}
+
+.colorsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.colorOption {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.colorOption.selected {
+  border-color: black;
+}
+
+.modalContent button {
+  border: var(--border);
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 800;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.modalContent button:hover {
+  background-color: rgb(235, 232, 232);
+}
+
+.modalContent p {
+  color: grey;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
