@@ -2,7 +2,7 @@
 
 import { DashboardContainer } from "@/app/components/DashboardContainer";
 import { useParams } from "next/navigation";
-import styles from "../../components/DashboardContainer/container.module.css";
+import styles from "./container.module.css";
 
 const Container = () => {
   const { slug } = useParams();
@@ -27,7 +27,7 @@ const Container = () => {
   };
   return (
     <div>
-      <div className={styles.dashboardContainer}>{renderContent()}</div>
+      <div className={styles.container}>{renderContent()}</div>
     </div>
   );
 };
