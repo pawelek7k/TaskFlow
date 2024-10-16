@@ -22,7 +22,6 @@
 
 .tasksList li div:last-child:hover {
   background-color: white;
-  color: var(--hover-color);
 }
 
 .defaultColor {
