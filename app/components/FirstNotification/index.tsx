@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { InfiniteTypewriter } from "../InfinityTypewriter";
 import styles from "./notification.module.css";
 
 export const FirstNotificationForUser: React.FC = () => {
@@ -19,7 +20,9 @@ export const FirstNotificationForUser: React.FC = () => {
   if (!isVisible) return null;
   return (
     <div className={styles.container}>
-      <h3>Hey!</h3>
+      <h3>
+        <InfiniteTypewriter label={"Hey!"} />
+      </h3>
       <p>
         You can change the category color for better recognition in our
         application!
