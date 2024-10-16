@@ -26,8 +26,8 @@ const Container = () => {
     }
   };
   return (
-    <div>
-      <div className={styles.container}>{renderContent()}</div>
+    <div className={styles.container}>
+      <div>{renderContent()}</div>
     </div>
   );
 };
