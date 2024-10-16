@@ -6,25 +6,29 @@
 
 .tasksList li {
   display: flex;
-  color: var(--text);
-  align-items: center;
   font-weight: 600;
   font-size: 0.8rem;
+  flex-direction: column;
 }
-.tasksList li div:last-child {
+.category {
+  display: flex;
+  align-items: center;
+}
+
+.category div:last-child {
+  border: var(--border);
   padding: 0.5rem 5rem;
   border-radius: 0rem 1rem 1rem 0rem;
-  cursor: pointer;
-  border: var(--border);
   transition: var(--transition);
+  cursor: pointer;
   box-shadow: 0px 5px 20px -14px var(--box-shadow-color);
 }
 
-.tasksList li div:last-child:hover {
+.category div:last-child:hover {
   background-color: white;
 }
 
-.defaultColor {
+.bar {
   width: 0.5rem;
   height: 100%;
 }

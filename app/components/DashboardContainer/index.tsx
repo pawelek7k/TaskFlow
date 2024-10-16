@@ -4,7 +4,7 @@ import styles from "./container.module.css";
 
 const category = [
   { status: "To do" },
-  { status: "InWork" },
+  { status: "In Work" },
   { status: "Review" },
   { status: "Done" },
 ];
@@ -41,16 +41,18 @@ export const DashboardContainer: React.FC = () => {
       <ul className={styles.tasksList}>
         {category.map((task, index) => (
           <li key={index}>
-            <div
-              className={styles.circle}
-              style={{ backgroundColor: categoryColors[index] }}
-              onClick={() => openModal(index)}
-            ></div>
-            <div
-              className={styles.defaultColor}
-              style={{ backgroundColor: categoryColors[index] }}
-            ></div>
-            <div>{task.status}</div>
+            <div className={styles.category}>
+              <div
+                className={styles.circle}
+                style={{ backgroundColor: categoryColors[index] }}
+                onClick={() => openModal(index)}
+              ></div>
+              <div
+                className={styles.bar}
+                style={{ backgroundColor: categoryColors[index] }}
+              ></div>
+              <div>{task.status}</div>
+            </div>
           </li>
         ))}
       </ul>
