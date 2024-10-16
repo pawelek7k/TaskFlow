@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FirstNotificationForUser } from "../FirstNotification";
 import { ModalWithColors } from "../ModalColor";
 import styles from "./container.module.css";
 
@@ -38,6 +39,7 @@ export const DashboardContainer: React.FC = () => {
 
   return (
     <div className={styles.dashboardContainer}>
+      <FirstNotificationForUser />
       <ul className={styles.tasksList}>
         {category.map((task, index) => (
           <li key={index}>
