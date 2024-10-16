@@ -1,3 +1,7 @@
+.dashboardConntainer {
+  position: relative;
+}
+
 .tasksList {
   display: flex;
   list-style: none;

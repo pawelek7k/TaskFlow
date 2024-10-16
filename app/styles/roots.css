@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 :root {
   --hover-color: rgb(133, 184, 184);
   --border: thin solid rgb(235, 232, 232);
@@ -5,4 +7,5 @@
   --box-shadow-color: rgba(66, 68, 90, 1);
   --text: #2a2e29;
   --background: #f9faf9;
+  --logo-font: "Pacifico", cursive;
 }
