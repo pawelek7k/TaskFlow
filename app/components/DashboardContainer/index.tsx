@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
+import { CreateTaskModal } from "../CreateTask";
 import { FirstNotificationForUser } from "../FirstNotification";
 import { ModalWithColors } from "../ModalColor";
 import styles from "./container.module.css";
@@ -39,6 +40,14 @@ export const DashboardContainer: React.FC = () => {
     closeColorModal();
   };
 
+  const openCreateTaskModal = () => {
+    setIsCreateTaskModal(true);
+  };
+
+  const closeCreateTaskModal = () => {
+    setIsCreateTaskModal(false);
+  };
+
   return (
     <div className={styles.dashboardContainer}>
       <FirstNotificationForUser />
@@ -58,7 +67,10 @@ export const DashboardContainer: React.FC = () => {
               <div>{task.status}</div>
             </div>
             <div className={styles.taskContainer}>
-              <div className={styles.plus}>
+              <div
+                className={styles.plus}
+                onClick={() => openCreateTaskModal()}
+              >
                 <GoPlus />
               </div>
             </div>
@@ -72,6 +84,8 @@ export const DashboardContainer: React.FC = () => {
           onColorSelect={changeCategoryColor}
         />
       )}
+
+      {isCreateTaskModal && <CreateTaskModal onClose={closeCreateTaskModal} />}
     </div>
   );
 };
