@@ -1,3 +1,4 @@
+import styles from "./modal.module.css";
 interface CreateTaskModalProps {
   onClose: () => void;
 }
@@ -5,5 +6,5 @@ interface CreateTaskModalProps {
 export const CreateTaskModal: React.FC<CreateTaskModalProps> = ({
   onClose,
 }) => {
-  return <div></div>;
+  return <div className={styles.overlay}></div>;
 };
