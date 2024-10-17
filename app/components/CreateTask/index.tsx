@@ -6,5 +6,9 @@ interface CreateTaskModalProps {
 export const CreateTaskModal: React.FC<CreateTaskModalProps> = ({
   onClose,
 }) => {
-  return <div className={styles.overlay}></div>;
+  return (
+    <div className={styles.overlay}>
+      <div className={styles.modalContent}></div>
+    </div>
+  );
 };
