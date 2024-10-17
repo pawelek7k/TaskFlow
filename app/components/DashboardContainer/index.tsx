@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GoPlus } from "react-icons/go";
 import { FirstNotificationForUser } from "../FirstNotification";
 import { ModalWithColors } from "../ModalColor";
 import styles from "./container.module.css";
@@ -54,6 +55,11 @@ export const DashboardContainer: React.FC = () => {
                 style={{ backgroundColor: categoryColors[index] }}
               ></div>
               <div>{task.status}</div>
+            </div>
+            <div className={styles.taskContainer}>
+              <div className={styles.plus}>
+                <GoPlus />
+              </div>
             </div>
           </li>
         ))}
