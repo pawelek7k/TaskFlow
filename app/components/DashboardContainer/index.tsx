@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { CreateTaskModal } from "../CreateTask";
 import { FirstNotificationForUser } from "../FirstNotification";
+import { Input } from "../Input";
 import { ModalWithColors } from "../ModalColor";
 import styles from "./container.module.css";
 
@@ -51,6 +52,7 @@ export const DashboardContainer: React.FC = () => {
   return (
     <div className={styles.dashboardContainer}>
       <FirstNotificationForUser />
+      <Input label="Enter Dashboard Name" />
       <ul className={styles.tasksList}>
         {category.map((task, index) => (
           <li key={index}>

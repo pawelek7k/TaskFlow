@@ -12,6 +12,9 @@
   border-bottom: var(--border);
   background: transparent;
   transition: var(--transition);
+  font-family: var(--logo-font);
+  letter-spacing: 2px;
+  font-size: 1.3rem;
 }
 
 .group input:focus {
@@ -27,7 +30,11 @@
   left: 0;
   pointer-events: none;
   opacity: 0.5;
-  background: var(--hover-color);
+  background: linear-gradient(
+    90deg,
+    var(--hover-color) 0%,
+    var(--background) 62%
+  );
   transition: width 0.3s ease;
 }
 
