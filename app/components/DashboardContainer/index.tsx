@@ -12,21 +12,22 @@ const category = [
 ];
 
 export const DashboardContainer: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalColorOpen, setIsModalColorOpen] = useState(false);
   const [selectedCategoryIndex, setSelectedCategoryIndex] = useState<
     number | null
   >(null);
   const [categoryColors, setCategoryColors] = useState(
     Array(category.length).fill("rgb(133, 184, 184)")
   );
+  const [isCreateTaskModal, setIsCreateTaskModal] = useState(false);
 
-  const openModal = (index: number) => {
+  const openColorModal = (index: number) => {
     setSelectedCategoryIndex(index);
-    setIsModalOpen(true);
+    setIsModalColorOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeColorModal = () => {
+    setIsModalColorOpen(false);
   };
 
   const changeCategoryColor = (color: string) => {
@@ -35,7 +36,7 @@ export const DashboardContainer: React.FC = () => {
       updatedColors[selectedCategoryIndex] = color;
     }
     setCategoryColors(updatedColors);
-    closeModal();
+    closeColorModal();
   };
 
   return (
@@ -48,7 +49,7 @@ export const DashboardContainer: React.FC = () => {
               <div
                 className={styles.circle}
                 style={{ backgroundColor: categoryColors[index] }}
-                onClick={() => openModal(index)}
+                onClick={() => openColorModal(index)}
               ></div>
               <div
                 className={styles.bar}
@@ -65,9 +66,9 @@ export const DashboardContainer: React.FC = () => {
         ))}
       </ul>
 
-      {isModalOpen && (
+      {isModalColorOpen && (
         <ModalWithColors
-          onClose={closeModal}
+          onClose={closeColorModal}
           onColorSelect={changeCategoryColor}
         />
       )}
