@@ -1,0 +1,45 @@
+.group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.group input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: var(--border);
+  background: transparent;
+  transition: var(--transition);
+}
+
+.group input:focus {
+  outline: none;
+  border-bottom-color: var(--hover-color);
+}
+
+.highlight {
+  position: absolute;
+  height: 50%;
+  width: 0;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background: var(--hover-color);
+  transition: width 0.3s ease;
+}
+
+.group input:focus ~ .highlight {
+  width: 100%;
+}
+
+@keyframes input-focus {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
