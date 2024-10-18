@@ -1,9 +1,13 @@
-const Login = () => {
+import { Login } from "../components/LogIn";
+
+const RegisterPage = () => {
   return (
     <div>
-      <main></main>
+      <main>
+        <Login />
+      </main>
     </div>
   );
 };
 
-export default Login;
+export default RegisterPage;

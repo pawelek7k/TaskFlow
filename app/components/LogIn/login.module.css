@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2rem 0rem 2rem 0rem;
+  border: var(--border);
+  gap: 1rem;
+}
+
+.forgotPassword {
+  font-size: 0.8rem;
+  text-align: end;
+  text-decoration: none;
+  color: var(--hover-color);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.logoContainer p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.welcome {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.input {
+  padding: 0.75rem;
+  border: var(--border);
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--hover-color);
+  box-shadow: 0 0 5px var(--hover-color);
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: var(--hover-color);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: rgb(113, 164, 164);
+}
+
+.link {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--hover-color);
+}
