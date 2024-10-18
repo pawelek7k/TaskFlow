@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Logo } from "../Logo";
 import styles from "./login.module.css";
 
-export const Login: React.FC = () => {
+export const LogIn: React.FC = () => {
   return (
     <div className={styles.container}>
       <form className={styles.form}>
