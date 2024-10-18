@@ -1,22 +1,10 @@
-"use client";
-
-import { useState } from "react";
-import { LogIn } from "../components/LogIn";
-import { SignUp } from "../components/SignUp";
+import { RegistersContainer } from "../components/RegistersContainer";
 
 const RegisterPage = () => {
-  const [isLogin, setIsLogin] = useState(true);
-
-  const toggleForm = () => {
-    setIsLogin((prev) => !prev);
-  };
   return (
     <div>
       <main>
-        {isLogin ? <LogIn /> : <SignUp />}
-        <button onClick={toggleForm}>
-          {isLogin ? "Switch to registration" : "Switch to login"}
-        </button>
+        <RegistersContainer />
       </main>
     </div>
   );
