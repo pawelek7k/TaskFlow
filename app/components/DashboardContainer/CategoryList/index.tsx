@@ -3,6 +3,7 @@ import { GoPlus } from "react-icons/go";
 import { CreateTaskArea } from "../../CreateTask";
 import { ModalWithColors } from "../../ModalColor";
 import styles from "../container.module.css";
+import { TaskItem } from "../TaskItem";
 
 const category = [
   { status: "To do" },
@@ -84,15 +85,7 @@ export const CategoryList = () => {
                 />
               )}
 
-              <ul>
-                {tasks
-                  .filter((task) => task.category === index)
-                  .map((task, taskIndex) => (
-                    <li key={taskIndex}>
-                      <strong>{task.name}</strong>: {task.content}
-                    </li>
-                  ))}
-              </ul>
+              <TaskItem tasks={tasks} categoryIndex={index} />
             </div>
           </li>
         ))}
