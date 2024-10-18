@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { LogIn } from "../LogIn";
 import { SignUp } from "../SignUp";
+import styles from "./container.module.css";
 
 export const RegistersContainer = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -11,7 +12,7 @@ export const RegistersContainer = () => {
     setIsLogin((prev) => !prev);
   };
   return (
-    <div>
+    <div className={styles.container}>
       {isLogin ? <LogIn /> : <SignUp />}
       <button onClick={toggleForm}>
         {isLogin ? "Switch to registration" : "Switch to login"}
