@@ -4,3 +4,9 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
+.list li {
+  border: var(--border);
+  padding: 1rem;
+  border-radius: 1rem;
+}
