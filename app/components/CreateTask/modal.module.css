@@ -2,6 +2,7 @@
   padding: 1rem;
   border-radius: 2rem;
   border: var(--border);
+  box-shadow: 0px 8px 9px -10px var(--box-shadow-color);
 }
 
 .modalContent {
@@ -24,9 +25,45 @@
   background-color: transparent;
   outline: none;
   padding: 0.2rem;
+  border-bottom: var(--border);
+  transition: var(--transition);
+}
+
+.inputsContainer input:focus,
+.inputsContainer textarea:focus {
   border-bottom: thin solid var(--hover-color);
 }
 
 .inputsContainer textarea {
   resize: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buttons li:first-child button {
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  transition: var(--transition);
+  box-shadow: 0px 8px 5px -10px var(--box-shadow-color);
+}
+
+.buttons li:first-child button:hover {
+  background-color: var(--hover-color);
+}
+
+.buttons li:last-child button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }

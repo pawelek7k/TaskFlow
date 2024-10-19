@@ -36,7 +36,7 @@ export const CreateTaskArea: React.FC<CreateTaskModalTypes> = ({
           <input type="text" name="name" onChange={handleChange} />
           <textarea name="content" onChange={handleChange} />
         </div>
-        <ul>
+        <ul className={styles.buttons}>
           <li>
             <button onClick={handleSubmit}>Add Task</button>
           </li>

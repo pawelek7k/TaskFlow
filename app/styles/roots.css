@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 :root {
-  --hover-color: rgb(133, 184, 184);
+  --hover-color: #85b8b8;
   --border: thin solid rgb(235, 232, 232);
   --gray: rgb(235, 232, 232);
   --transition: 250ms ease-in-out;
