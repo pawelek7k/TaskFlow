@@ -1,3 +1,4 @@
+import styles from "./styles.module.css";
 interface Task {
   category: number;
   name: string;
@@ -11,12 +12,12 @@ interface TaskItemProps {
 
 export const TaskItem: React.FC<TaskItemProps> = ({ tasks, categoryIndex }) => {
   return (
-    <ul>
+    <ul className={styles.list}>
       {tasks
         .filter((task) => task.category === categoryIndex)
         .map((task, taskIndex) => (
           <li key={taskIndex}>
-            <strong>{task.name}</strong> {task.content}
+            <h3>{task.name}</h3> {task.content}
           </li>
         ))}
     </ul>
