@@ -77,15 +77,13 @@ export const CategoryList = () => {
               >
                 <GoPlus />
               </div>
-
+              <TaskItem tasks={tasks} categoryIndex={index} />
               {isCreateTaskAreaOpen && selectedCategoryIndex === index && (
                 <CreateTaskArea
                   onClose={() => closeModal(setIsCreateTaskAreaOpen)}
                   onCreateTask={addTask}
                 />
               )}
-
-              <TaskItem tasks={tasks} categoryIndex={index} />
             </div>
           </li>
         ))}

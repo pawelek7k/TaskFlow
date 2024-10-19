@@ -1,16 +1,30 @@
 .container {
   padding: 1rem;
+  border-radius: 2rem;
+  border: var(--border);
 }
 
 .modalContent {
-  background-color: white;
   border-radius: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .inputsContainer {
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
+}
+
+.inputsContainer input,
+.inputsContainer textarea {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0.2rem;
+  border-bottom: thin solid var(--hover-color);
 }
 
 .inputsContainer textarea {
