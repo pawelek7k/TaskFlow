@@ -17,7 +17,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({ tasks, categoryIndex }) => {
         .filter((task) => task.category === categoryIndex)
         .map((task, taskIndex) => (
           <li key={taskIndex}>
-            <h3>{task.name}</h3> {task.content}
+            <h3>{task.name}</h3> <p>{task.content}</p>
           </li>
         ))}
     </ul>
