@@ -1,18 +1,18 @@
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-} */
+.container {
+  padding: 1rem;
+}
 
 .modalContent {
   background-color: white;
   border-radius: 10px;
   position: relative;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsContainer textarea {
+  resize: none;
 }

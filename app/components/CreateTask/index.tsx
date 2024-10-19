@@ -29,9 +29,9 @@ export const CreateTaskArea: React.FC<CreateTaskModalTypes> = ({
     setTaskContent({ name: "", content: "" });
   };
   return (
-    <div className={styles.overlay}>
+    <div className={styles.container}>
       <div className={styles.modalContent}>
-        <div>
+        <div className={styles.inputsContainer}>
           <input type="text" name="name" onChange={handleChange} />
           <textarea name="content" onChange={handleChange} />
         </div>
