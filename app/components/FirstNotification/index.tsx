@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 import { InfiniteTypewriter } from "../InfinityTypewriter";
 import styles from "./styles.module.css";
@@ -6,7 +7,7 @@ export const FirstNotificationForUser: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const hasDismissed = localStorage.getItem("notificationDismissed");
+    const hasDismissed = Cookies.get("notificationDismissed");
     if (hasDismissed) {
       setIsVisible(false);
     }
@@ -14,10 +15,11 @@ export const FirstNotificationForUser: React.FC = () => {
 
   const handleDismiss = () => {
     setIsVisible(false);
-    localStorage.setItem("notificationDismissed", "true");
+    Cookies.set("notificationDismissed", "true", { expires: 7 });
   };
 
   if (!isVisible) return null;
+
   return (
     <div className={styles.container}>
       <h3>
