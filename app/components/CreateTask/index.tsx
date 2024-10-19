@@ -31,10 +31,18 @@ export const CreateTaskArea: React.FC<CreateTaskModalTypes> = ({
   return (
     <div className={styles.overlay}>
       <div className={styles.modalContent}>
-        <input type="text" name="name" onChange={handleChange} />
-        <textarea name="content" onChange={handleChange} />
-        <button onClick={handleSubmit}>Add Task</button>
-        <button onClick={onClose}>Cancel</button>
+        <div>
+          <input type="text" name="name" onChange={handleChange} />
+          <textarea name="content" onChange={handleChange} />
+        </div>
+        <ul>
+          <li>
+            <button onClick={handleSubmit}>Add Task</button>
+          </li>
+          <li>
+            <button onClick={onClose}>Cancel</button>
+          </li>
+        </ul>
       </div>
     </div>
   );
