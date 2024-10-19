@@ -13,7 +13,7 @@
 .headerList {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: var(--primary-spacing);
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 600;
