@@ -50,7 +50,7 @@
 .buttons li:first-child button {
   border: none;
   cursor: pointer;
-  border-radius: 2rem;
+  border-radius: var(--primary-border-radius);
   padding: 0.5rem;
   transition: var(--transition);
   box-shadow: 0px 8px 5px -10px var(--box-shadow-color);

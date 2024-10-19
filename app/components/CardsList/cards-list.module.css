@@ -4,7 +4,7 @@
   list-style: none;
   gap: 0;
   border: var(--border);
-  border-radius: 2rem;
+  border-radius: var(--primary-border-radius);
   max-width: 14rem;
 }
 
@@ -51,19 +51,19 @@
 }
 
 .item:nth-child(1) {
-  border-top-left-radius: 2rem;
+  border-top-left-radius: var(--primary-border-radius);
 }
 
 .item:nth-child(2) {
-  border-top-right-radius: 2rem;
+  border-top-right-radius: var(--primary-border-radius);
 }
 
 .item:nth-child(5) {
-  border-bottom-left-radius: 2rem;
+  border-bottom-left-radius: var(--primary-border-radius);
 }
 
 .item:nth-child(6) {
-  border-bottom-right-radius: 2rem;
+  border-bottom-right-radius: var(--primary-border-radius);
 }
 
 .item span {

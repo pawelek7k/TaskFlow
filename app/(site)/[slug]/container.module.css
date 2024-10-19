@@ -1,6 +1,6 @@
 .container {
   border: var(--border);
   width: 80rem;
-  border-radius: 2rem;
+  border-radius: var(--primary-border-radius);
   padding: 2rem;
 }
