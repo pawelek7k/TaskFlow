@@ -2,7 +2,7 @@ import { RiUser4Line } from "react-icons/ri";
 import { RxDotsHorizontal } from "react-icons/rx";
 import { CardsList } from "../CardsList";
 import { SocialsInput } from "../SocialsInput";
-import styles from "./user-profile.module.css";
+import styles from "./styles.module.css";
 
 export const UserProfileContainer = () => {
   return (

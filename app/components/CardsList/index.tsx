@@ -1,6 +1,6 @@
 import { cardItems } from "@/app/arrays/IconsList";
 import Link from "next/link";
-import styles from "./cards-list.module.css";
+import styles from "./styles.module.css";
 
 export const CardsList = () => {
   return (

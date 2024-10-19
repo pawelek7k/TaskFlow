@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import styles from "./modal.module.css";
+import styles from "./styles.module.css";
 interface CreateTaskModalTypes {
   onClose: () => void;
   onCreateTask: (task: { name: string; content: string }) => void;

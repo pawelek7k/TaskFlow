@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { CreateTaskArea } from "../../CreateTask";
 import { ModalWithColors } from "../../ModalColor";
-import styles from "../container.module.css";
+import styles from "../styles.module.css";
 import { TaskItem } from "../TaskItem";
 
 const category = [

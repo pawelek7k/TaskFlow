@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Logo } from "../Logo";
-import styles from "./modal.module.css";
+import styles from "./styles.module.css";
 
 interface ModalWithColorsProps {
   onClose: () => void;

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { LogIn } from "../LogIn";
 import { SignUp } from "../SignUp";
-import styles from "./container.module.css";
+import styles from "./styles.module.css";
 
 export const RegistersContainer = () => {
   const [isLogin, setIsLogin] = useState(true);

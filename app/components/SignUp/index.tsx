@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "../Logo";
-import styles from "./signup.module.css";
+import styles from "./styles.module.css";
 
 export const SignUp: React.FC = () => {
   return (

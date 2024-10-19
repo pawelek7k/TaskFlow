@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "../Logo";
-import styles from "./header.module.css";
+import styles from "./styles.module.css";
 
 export const Header = () => {
   return (

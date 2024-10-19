@@ -1,7 +1,7 @@
 import { FirstNotificationForUser } from "../FirstNotification";
 import { Input } from "../Input";
-import styles from "./container.module.css";
 import { CategoryList } from "./CategoryList";
+import styles from "./styles.module.css";
 
 export const DashboardContainer: React.FC = () => {
   return (

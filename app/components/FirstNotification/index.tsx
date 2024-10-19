@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { InfiniteTypewriter } from "../InfinityTypewriter";
-import styles from "./notification.module.css";
+import styles from "./styles.module.css";
 
 export const FirstNotificationForUser: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
