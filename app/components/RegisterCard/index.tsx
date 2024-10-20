@@ -1,5 +1,6 @@
 import React from "react";
 import { PrimaryButton } from "../Button";
+import { Headline } from "../Headline";
 
 interface RegisterCardProps {
   heading: string;
@@ -16,7 +17,7 @@ export const RegisterCard: React.FC<RegisterCardProps> = ({
 }) => {
   return (
     <div>
-      <h1>{heading}</h1>
+      <Headline label={heading} />
       <p>{description}</p>
       <PrimaryButton onClick={onClick} label={button} />
     </div>
