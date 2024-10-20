@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 interface ButtonType {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   type?: "submit" | "reset" | "button";
 }
 
@@ -20,7 +20,12 @@ export const PrimaryButton: React.FC<ButtonType> = ({
       className={styles.button}
     >
       {label}
-      <Image src="/images/btn-img.png" alt="btn-img" width="20" height="20" />
+      <Image
+        src="/images/btn-img.png"
+        alt="button image"
+        width="20"
+        height="20"
+      />
     </button>
   );
 };
