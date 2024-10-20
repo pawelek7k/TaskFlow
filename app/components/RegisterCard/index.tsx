@@ -1,5 +1,5 @@
 import React from "react";
-import { PrimaryButton } from "../Button";
+import { PrimaryButton } from "../Buttons/PrimaryButton";
 import { Headline } from "../Headline";
 import styles from "./styles.module.css";
 

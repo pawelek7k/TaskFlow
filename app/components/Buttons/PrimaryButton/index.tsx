@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 
-interface ButtonType {
+export interface ButtonType {
   label: string;
   onClick?: () => void;
   type?: "submit" | "reset" | "button";

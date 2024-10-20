@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SecondaryButton } from "../Buttons/SecondaryButton";
 import styles from "./styles.module.css";
 
 export const SignIn: React.FC = () => {
@@ -17,7 +18,7 @@ export const SignIn: React.FC = () => {
         <input type="email" placeholder="Email" required />
         <input type="password" placeholder="Password" required />
         <a href="#">Forgot your password?</a>
-        <button type="submit">Sign In</button>
+        <SecondaryButton label={"Sign In"} type="submit" />
       </form>
     </div>
   );
