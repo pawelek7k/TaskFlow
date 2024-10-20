@@ -15,8 +15,13 @@ export const SignIn: React.FC = () => {
             height="35"
           />
         </div>
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+        <input type="email" placeholder="Email" required autoComplete="email" />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          autoComplete="current-password"
+        />
         <a href="#">Forgot your password?</a>
         <SecondaryButton label={"Sign In"} type="submit" />
       </form>

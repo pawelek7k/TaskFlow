@@ -15,9 +15,14 @@ export const SignUp: React.FC = () => {
             height="35"
           />
         </div>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+        <input type="text" placeholder="Name" required autoComplete="name" />
+        <input type="email" placeholder="Email" required autoComplete="email" />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          autoComplete="new-password"
+        />
         <SecondaryButton label={"Sign In"} type="submit" />
       </form>
     </div>
