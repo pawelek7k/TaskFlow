@@ -7,12 +7,7 @@ export const SecondaryButton: React.FC<ButtonType> = ({
   type = "button",
 }) => {
   return (
-    <button
-      onClick={onClick}
-      type={type}
-      aria-label={label}
-      className={styles.button}
-    >
+    <button onClick={onClick} type={type} className={styles.button}>
       {label}
     </button>
   );
