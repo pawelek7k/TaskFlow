@@ -1,6 +1,6 @@
 import { RegistersContainer } from "../components/RegistersContainer";
 
-const RegisterPage = () => {
+const RegisterPage: React.FC = () => {
   return (
     <div>
       <main>
