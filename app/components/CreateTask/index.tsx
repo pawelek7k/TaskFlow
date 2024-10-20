@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { SecondaryButton } from "../Buttons/SecondaryButton";
 import styles from "./styles.module.css";
 interface CreateTaskModalTypes {
   onClose: () => void;
@@ -38,7 +39,7 @@ export const CreateTaskArea: React.FC<CreateTaskModalTypes> = ({
         </div>
         <ul className={styles.buttons}>
           <li>
-            <button onClick={handleSubmit}>Add Task</button>
+            <SecondaryButton label="Add Task" onClick={handleSubmit} />
           </li>
           <li>
             <button onClick={onClose}>
