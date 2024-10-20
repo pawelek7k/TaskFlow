@@ -29,10 +29,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        <div className="flex">
+        <main className="flex">
           <UserProfileContainer />
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );
