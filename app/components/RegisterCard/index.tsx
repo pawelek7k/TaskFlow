@@ -1,6 +1,7 @@
 import React from "react";
 import { PrimaryButton } from "../Button";
 import { Headline } from "../Headline";
+import styles from "./styles.module.css";
 
 interface RegisterCardProps {
   heading: string;
@@ -16,7 +17,7 @@ export const RegisterCard: React.FC<RegisterCardProps> = ({
   onClick,
 }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <Headline label={heading} />
       <p>{description}</p>
       <PrimaryButton onClick={onClick} label={button} />

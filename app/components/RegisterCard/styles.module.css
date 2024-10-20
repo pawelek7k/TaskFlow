@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--primary-spacing);
+}
+
+.container p {
+  font-weight: 600;
+  max-width: 60%;
+  color: var(--text);
+  background-image: linear-gradient(
+    45deg,
+    var(--text) 9%,
+    var(--primary-color) 56%,
+    var(--text) 53%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+}

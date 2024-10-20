@@ -30,7 +30,9 @@ export const RegistersContainer: React.FC = () => {
           <div className={`${styles.overlayPanel} ${styles.overlayLeft}`}>
             <RegisterCard
               heading={"Welcome Back!"}
-              description={""}
+              description={
+                "Welcome back! 🔑 Enter your login details and continue enjoying our services!"
+              }
               button={"Sign up"}
               onClick={toggleForm}
             />
@@ -38,7 +40,9 @@ export const RegistersContainer: React.FC = () => {
           <div className={`${styles.overlayPanel} ${styles.overlayRight}`}>
             <RegisterCard
               heading={"Join to us!"}
-              description={""}
+              description={
+                "Hi there! 🚀 We’re delighted that you want to collaborate with us. Sign up and become part of our amazing community!"
+              }
               button={"Sign in"}
               onClick={toggleForm}
             />
