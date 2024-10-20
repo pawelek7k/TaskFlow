@@ -44,7 +44,7 @@
 
 .textContainer h3 {
   font-size: 1rem;
-  color: rgba(128, 128, 128, 0.648);
+  color: var(--text-accent);
 }
 
 .imgContainer {
