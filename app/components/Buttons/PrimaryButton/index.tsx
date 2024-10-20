@@ -16,6 +16,7 @@ export const PrimaryButton: React.FC<ButtonType> = ({
     <button onClick={onClick} type={type} className={styles.button}>
       {label}
       <Image
+        loading="lazy"
         src="/images/btn-img.png"
         alt="button image"
         width="20"

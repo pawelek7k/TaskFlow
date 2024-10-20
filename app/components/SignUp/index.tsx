@@ -9,6 +9,7 @@ export const SignUp: React.FC = () => {
         <div>
           <h2>Create Account</h2>
           <Image
+            loading="lazy"
             src="/images/form-img.png"
             alt="form image"
             width="35"
