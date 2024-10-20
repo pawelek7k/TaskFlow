@@ -2,14 +2,14 @@
 
 :root {
   /* colors */
-  --hover-color: #85b8b8;
-  --primary-color: #6f9999;
+  --hover-color: #a6c9c0;
+  --primary-color: #72a093;
   --border: thin solid rgb(235, 232, 232);
   --gray: rgb(235, 232, 232);
   --box-shadow-color: rgba(66, 68, 90, 1);
-  --text: #2a2e29;
-  --text-accent: #2a2e29b2;
-  --background: #f9faf9;
+  --text: #0f1211;
+  --text-accent: #0f1211b8;
+  --background: #fbfcfc;
   /* spacing */
   --primary-spacing: 2rem;
   --transition: 250ms ease-in-out;
