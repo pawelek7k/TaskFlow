@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./styles.module.css";
 
 interface ButtonType {
@@ -19,6 +20,7 @@ export const PrimaryButton: React.FC<ButtonType> = ({
       className={styles.button}
     >
       {label}
+      <Image src="/images/btn-img.png" alt="btn-img" width="20" height="20" />
     </button>
   );
 };

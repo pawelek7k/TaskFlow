@@ -3,6 +3,7 @@
 :root {
   /* colors */
   --hover-color: #85b8b8;
+  --primary-color: #6f9999;
   --border: thin solid rgb(235, 232, 232);
   --gray: rgb(235, 232, 232);
   --box-shadow-color: rgba(66, 68, 90, 1);
