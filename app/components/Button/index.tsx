@@ -1,3 +1,5 @@
+import styles from "./styles.module.css";
+
 interface ButtonType {
   label: string;
   onClick: () => void;
@@ -10,7 +12,12 @@ export const PrimaryButton: React.FC<ButtonType> = ({
   type = "button",
 }) => {
   return (
-    <button onClick={onClick} type={type} aria-label={label}>
+    <button
+      onClick={onClick}
+      type={type}
+      aria-label={label}
+      className={styles.button}
+    >
       {label}
     </button>
   );
