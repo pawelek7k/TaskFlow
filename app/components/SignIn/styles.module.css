@@ -50,4 +50,14 @@
   text-align: end;
   color: var(--text);
   font-weight: 600;
+  color: var(--primary-color);
+  background-image: conic-gradient(
+    from 270deg,
+    var(--primary-color) 9%,
+    var(--hover-color) 56%,
+    var(--text) 53%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
