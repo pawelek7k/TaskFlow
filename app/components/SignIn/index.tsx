@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { GoogleButton } from "../Buttons/GoogleButton";
 import { SecondaryButton } from "../Buttons/SecondaryButton";
 import styles from "./styles.module.css";
 
@@ -25,6 +26,7 @@ export const SignIn: React.FC = () => {
         />
         <a href="#">Forgot your password?</a>
         <SecondaryButton label={"Sign In"} type="submit" />
+        <GoogleButton />
       </form>
     </div>
   );

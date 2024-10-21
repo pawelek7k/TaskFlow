@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { GoogleButton } from "../Buttons/GoogleButton";
 import { SecondaryButton } from "../Buttons/SecondaryButton";
 import styles from "./styles.module.css";
 
@@ -25,6 +26,7 @@ export const SignUp: React.FC = () => {
           autoComplete="new-password"
         />
         <SecondaryButton label={"Sign In"} type="submit" />
+        <GoogleButton />
       </form>
     </div>
   );

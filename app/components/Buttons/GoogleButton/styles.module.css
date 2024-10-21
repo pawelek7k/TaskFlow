@@ -1,0 +1,35 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+  color: #2a2e29;
+  font-weight: 600;
+  padding: 0.75rem;
+  border: var(--border);
+  border-radius: var(--primary-border-radius);
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  box-shadow: 0px 4px 9px -8px var(--box-shadow-color);
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

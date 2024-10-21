@@ -1,9 +1,10 @@
+import { FcGoogle } from "react-icons/fc";
 import styles from "./styles.module.css";
 
-interface GoogleBtnType {
-  label: string;
-}
-
-export const GoogleButton: React.FC<GoogleBtnType> = ({ label }) => {
-  return <button className={styles.button}>{label}</button>;
+export const GoogleButton: React.FC = () => {
+  return (
+    <button className={styles.button}>
+      <FcGoogle /> Continue with Google
+    </button>
+  );
 };
