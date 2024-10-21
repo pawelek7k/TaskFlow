@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PrimaryButton } from "../../Buttons/PrimaryButton";
 import { SignIn } from "../../SignIn";
 import { SignUp } from "../../SignUp";
+import styles from "./styles.module.css";
 
 export const TabletRegistersContainer = () => {
   const [isLoginPage, setIsLoginPage] = useState(true);
@@ -11,7 +12,7 @@ export const TabletRegistersContainer = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {isLoginPage ? <SignIn /> : <SignUp />}{" "}
       <PrimaryButton
         onClick={togglePage}
